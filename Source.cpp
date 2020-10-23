@@ -53,6 +53,13 @@ int main()
 	
 	float thuong = thuongBT(a, b);
 	cout << "\nThuong a/b =" << thuong;
+	
+	cout << "\nNhap vao dai:";
+	cin >> dai;
+	cout << "\nNhap vao rong:";
+	cin >> rong;
+	cout << "\nchu vi hcn la:" << chuvihcn(dai, rong);
+	cout << "\ndien tich hcn la:" << dientichhcn(dai, rong);
 
 	system("pause");
 	return 0;
