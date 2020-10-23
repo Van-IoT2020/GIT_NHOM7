@@ -76,7 +76,7 @@ int main()
 		cout << "\nDung" << endl;
 	}
 	else {
-		cout << "\nSai" << endl;
+		cout << "\nSai";
 	}
 
 
