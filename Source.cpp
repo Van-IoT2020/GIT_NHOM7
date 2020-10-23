@@ -33,6 +33,7 @@ int tinhDienTichHinhVuong(int &a) {
 	return a * a;
 }
 
+
 int main()
 {
 	int a, b;
@@ -62,6 +63,10 @@ int main()
 	cout << "\nDien tich hinh vuong = "<< tinhDienTichHinhVuong(hv);
 
 	cout << "\nChu vi hinh vuong = " << tinhChuViHinhVuong(hv);
+
+	cout << "\n===========================================";
+	int ngaunhien = rand() % 100;
+
 
 	system("pause");
 	return 0;
