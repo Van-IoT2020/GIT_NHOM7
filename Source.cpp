@@ -79,6 +79,20 @@ int main()
 		cout << "\nSai" << endl;
 	}
 
+	cout << "\n===========================================";
+	cout << "\nRand Hieu:";
+	int ngaunhien1 = rand() % 100;
+	int ngaunhien2 = rand() % 100;
+	cout << "\nTong ngau nhien" << ngaunhien1 << " - " << ngaunhien2 << " = ?";
+	int kq;
+	cout << "\nNhap vao ket qua";
+	cin >> kq;
+	if (kq == hieuBT(ngaunhien1, ngaunhien2)) {
+		cout << "\nDung" << endl;
+	}
+	else {
+		cout << "\nSai" << endl;
+	}
 
 
 	system("pause");
