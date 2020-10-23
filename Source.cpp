@@ -6,6 +6,9 @@ int hieuBT(int &a, int &b);
 int tichBT(int &a, int &b);
 float thuongBT(int &a, int &b);
 
+int tinhChuViHinhVuong(int &a);
+int tinhDienTichHinhVuong(int &a);
+
 int tongBT(int &a, int &b) {
 	return a + b;
 }
@@ -20,6 +23,14 @@ int tichBT(int &a, int &b){
 
 float thuongBT(int &a, int &b){
 	return (float)a/b;
+}
+
+int tinhChuViHinhVuong(int &a) {
+	return a * 4;
+}
+
+int tinhDienTichHinhVuong(int &a) {
+	return a * a;
 }
 
 int main()
@@ -43,6 +54,14 @@ int main()
 	
 	float thuong = thuongBT(a, b);
 	cout << "\nThuong a/b =" << thuong;
+
+	cout << "\n===========================================";
+	int hv;
+	cout << "\nNhap vao canh cua hinh vuong:";
+	cin >> hv;
+	cout << "\nDien tich hinh vuong = "<< tinhDienTichHinhVuong(hv);
+
+	cout << "\nChu vi hinh vuong = " << tinhChuViHinhVuong(hv);
 
 	system("pause");
 	return 0;
