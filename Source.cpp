@@ -64,9 +64,6 @@ int main()
 
 	cout << "\nChu vi hinh vuong = " << tinhChuViHinhVuong(hv);
 
-	cout << "\n===========================================";
-	int ngaunhien = rand() % 100;
-
 
 	system("pause");
 	return 0;
