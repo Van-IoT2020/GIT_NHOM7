@@ -21,7 +21,16 @@ int tichBT(int &a, int &b){
 float thuongBT(int &a, int &b){
 	return (float)a/b;
 }
-
+int chuvihcn ( int &dai,int &rong)
+{
+	int chuvi = (dai + rong) *2; 
+	return chuvi;
+}
+int dientichhcn (int &dai,int &rong)
+{
+	int dientich = dai*rong;
+	return dientich;
+}
 int main()
 {
 	int a, b;
@@ -31,6 +40,7 @@ int main()
 	cin>> a;
 	cout << "\nNhap vao b:";
 	cin>> b;
+
 
 	int tong = tongBT(a, b);
 	cout << "\nTong a*b =" << tong;
