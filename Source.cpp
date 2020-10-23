@@ -64,6 +64,22 @@ int main()
 
 	cout << "\nChu vi hinh vuong = " << tinhChuViHinhVuong(hv);
 
+	cout << "\n===========================================";
+	cout << "\nRand Tong:";
+	int ngaunhien1 = rand() % 100;
+	int ngaunhien2 = rand() % 100;
+	cout << "\nTong ngau nhien" << ngaunhien1 << " + " << ngaunhien2 << " = ?";
+	int kq;
+	cout << "\nNhap vao ket qua";
+	cin >> kq;
+	if (kq == tongBT(ngaunhien1, ngaunhien2)){
+		cout << "\nDung" << endl;
+	}
+	else {
+		cout << "\nSai" << endl;
+	}
+
+
 
 	system("pause");
 	return 0;
