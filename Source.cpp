@@ -6,6 +6,7 @@ int hieuBT(int &a, int &b);
 int tichBT(int &a, int &b);
 float thuongBT(int &a, int &b);
 
+
 int tongBT(int &a, int &b) {
 	return a + b;
 }
@@ -24,7 +25,7 @@ float thuongBT(int &a, int &b){
 
 int main()
 {
-	int a, b;
+	int a, b ;
 
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
 	cout << "\nNhap vao a:";
@@ -43,7 +44,12 @@ int main()
 	
 	float thuong = thuongBT(a, b);
 	cout << "\nThuong a/b =" << thuong;
-
+	
+	int r;
+	cout << "\nNhap vao ban kinh r:";
+	cin>> r;
+	cout << "\nChuvi  =" << 2*r*3.14;
+	cout << "\nDientich  =" << r*r*3.14;
 	system("pause");
 	return 0;
 }
