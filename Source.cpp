@@ -33,7 +33,16 @@ int tinhDienTichHinhVuong(int &a) {
 	return a * a;
 }
 
-
+int chuvihcn ( int &dai,int &rong)
+{
+	int chuvi = (dai + rong) *2; 
+	return chuvi;
+}
+int dientichhcn (int &dai,int &rong)
+{
+	int dientich = dai*rong;
+	return dientich;
+}
 int main()
 {
 	int a, b ;
@@ -43,6 +52,7 @@ int main()
 	cin>> a;
 	cout << "\nNhap vao b:";
 	cin>> b;
+
 
 	int tong = tongBT(a, b);
 	cout << "\nTong a*b =" << tong;
@@ -55,6 +65,13 @@ int main()
 	
 	float thuong = thuongBT(a, b);
 	cout << "\nThuong a/b =" << thuong;
+	
+	cout << "\nNhap vao dai:";
+	cin >> dai;
+	cout << "\nNhap vao rong:";
+	cin >> rong;
+	cout << "\nchu vi hcn la:" << chuvihcn(dai, rong);
+	cout << "\ndien tich hcn la:" << dientichhcn(dai, rong);
 
 	cout << "\n===========================================";
 	int hv;
