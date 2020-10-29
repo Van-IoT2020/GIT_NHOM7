@@ -66,6 +66,7 @@ int main()
 	float thuong = thuongBT(a, b);
 	cout << "\nThuong a/b =" << thuong;
 	
+	cout << "\n===================CVDThinh chu nhat========================";
 	cout << "\nNhap vao dai:";
 	cin >> dai;
 	cout << "\nNhap vao rong:";
@@ -73,7 +74,7 @@ int main()
 	cout << "\nchu vi hcn la:" << chuvihcn(dai, rong);
 	cout << "\ndien tich hcn la:" << dientichhcn(dai, rong);
 
-	cout << "\n===========================================";
+	cout << "\n===================CVDT hinh vuong========================";
 	int hv;
 	cout << "\nNhap vao canh cua hinh vuong:";
 	cin >> hv;
@@ -81,11 +82,29 @@ int main()
 
 	cout << "\nChu vi hinh vuong = " << tinhChuViHinhVuong(hv);
 	
+
+	cout << "\n===========================CVDT hinh tron================";
 	int r;
 	cout << "\nNhap vao ban kinh r:";
 	cin>> r;
 	cout << "\nChuvi  =" << 2*r*3.14;
 	cout << "\nDientich  =" << r*r*3.14;
+
+	cout << "\n====================rand Tong=======================";
+	cout << "\nRand Tong:";
+	int ngaunhien1 = rand() % 100;
+	int ngaunhien2 = rand() % 100;
+	cout << "\nTong ngau nhien" << ngaunhien1 << " + " << ngaunhien2 << " = ?";
+	int kq;
+	cout << "\nNhap vao ket qua";
+	cin >> kq;
+	if (kq == tongBT(ngaunhien1, ngaunhien2)){
+		cout << "\nDung" << endl;
+	}
+	else {
+		cout << "\nSai" << endl;
+	}
+
 	system("pause");
 	return 0;
 }
