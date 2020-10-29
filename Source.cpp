@@ -36,7 +36,7 @@ int tinhDienTichHinhVuong(int &a) {
 
 int main()
 {
-	int a, b;
+	int a, b ;
 
 	cout << "DAY LA CHUONG TRINH DE THUC HANH GIT";
 	cout << "\nNhap vao a:";
@@ -63,8 +63,12 @@ int main()
 	cout << "\nDien tich hinh vuong = "<< tinhDienTichHinhVuong(hv);
 
 	cout << "\nChu vi hinh vuong = " << tinhChuViHinhVuong(hv);
-
-
+	
+	int r;
+	cout << "\nNhap vao ban kinh r:";
+	cin>> r;
+	cout << "\nChuvi  =" << 2*r*3.14;
+	cout << "\nDientich  =" << r*r*3.14;
 	system("pause");
 	return 0;
 }
