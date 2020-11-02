@@ -1,44 +1,44 @@
 #include <iostream>
 using namespace std;
 
-int tongBT(int &a, int &b);
-int hieuBT(int &a, int &b);
-int tichBT(int &a, int &b);
-float thuongBT(int &a, int &b);
+int tongBT(int a, int b);
+int hieuBT(int a, int b);
+int tichBT(int a, int b);
+float thuongBT(int a, int b);
 
-int tinhChuViHinhVuong(int &a);
-int tinhDienTichHinhVuong(int &a);
+int tinhChuViHinhVuong(int a);
+int tinhDienTichHinhVuong(int a);
 
-int tongBT(int &a, int &b) {
+int tongBT(int a, int b) {
 	return a + b;
 }
 
-int hieuBT(int &a, int &b) {
+int hieuBT(int a, int b) {
 	return a - b;
 }
 
-int tichBT(int &a, int &b){
+int tichBT(int a, int b){
 	return a*b;
 }
 
-float thuongBT(int &a, int &b){
+float thuongBT(int a, int b){
 	return (float)a/b;
 }
 
-int tinhChuViHinhVuong(int &a) {
+int tinhChuViHinhVuong(int a) {
 	return a * 4;
 }
 
-int tinhDienTichHinhVuong(int &a) {
+int tinhDienTichHinhVuong(int a) {
 	return a * a;
 }
 
-int chuvihcn ( int &dai,int &rong)
+int chuvihcn ( int dai,int rong)
 {
 	int chuvi = (dai + rong) *2; 
 	return chuvi;
 }
-int dientichhcn (int &dai,int &rong)
+int dientichhcn (int dai,int rong)
 {
 	int dientich = dai*rong;
 	return dientich;
@@ -67,6 +67,7 @@ int main()
 	cout << "\nThuong a/b =" << thuong;
 	
 	cout << "\n===================CVDThinh chu nhat========================";
+	int dai, rong;
 	cout << "\nNhap vao dai:";
 	cin >> dai;
 	cout << "\nNhap vao rong:";
@@ -92,13 +93,13 @@ int main()
 
 	cout << "\n====================rand Tong=======================";
 	cout << "\nRand Tong:";
-	int ngaunhien1 = rand() % 100;
-	int ngaunhien2 = rand() % 100;
-	cout << "\nTong ngau nhien" << ngaunhien1 << " + " << ngaunhien2 << " = ?";
-	int kq;
-	cout << "\nNhap vao ket qua";
-	cin >> kq;
-	if (kq == tongBT(ngaunhien1, ngaunhien2)){
+	int ngaunhienT1 = rand() % 100;
+	int ngaunhienT2 = rand() % 100;
+	cout << "\nTong ngau nhien " << ngaunhienT1 << " + " << ngaunhienT2 << " = ?";
+	int kqT;
+	cout << "\nNhap vao ket qua = ";
+	cin >> kqT;
+	if (kqT == tongBT(ngaunhienT1, ngaunhienT2)){
 		cout << "\nDung" << endl;
 	}
 	else {
@@ -107,13 +108,13 @@ int main()
 
 	cout << "\n===================rand Hieu========================";
 	cout << "\nRand Hieu:";
-	int ngaunhien1 = rand() % 100;
-	int ngaunhien2 = rand() % 100;
-	cout << "\nTong ngau nhien" << ngaunhien1 << " - " << ngaunhien2 << " = ?";
-	int kq;
-	cout << "\nNhap vao ket qua";
-	cin >> kq;
-	if (kq == hieuBT(ngaunhien1, ngaunhien2)) {
+	int ngaunhienH1 = rand() % 100;
+	int ngaunhienH2 = rand() % 100;
+	cout << "\nHieu ngau nhien " << ngaunhienH1 << " - " << ngaunhienH2 << " = ?";
+	int kqH;
+	cout << "\nNhap vao ket qua = ";
+	cin >> kqH;
+	if (kqH == hieuBT(ngaunhienH1, ngaunhienH2)) {
 		cout << "\nDung" << endl;
 	}
 	else {
